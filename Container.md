@@ -313,7 +313,12 @@ Container(
 )
 ```
 
-**说明**：默认 `clipBehavior` 为 `Clip.none`，Decorations 只绘制视觉效果但不会裁剪子组件；当你需要确保内容不超出圆角时，务必手动设置。
+**说明**：默认 `clipBehavior` 为 `Clip.none`，Decorations 只绘制视觉效果但不会裁剪子组件。
+
+**何时必须启用 clipBehavior**：
+- 使用 `DecorationImage` 作为背景图且需要圆角裁剪
+- 子组件超出装饰边界（如阴影溢出）
+- 使用 `BoxShape.circle` 时确保内容不超出圆形边界
 
 ## 基础示例集合
 
@@ -1261,14 +1266,14 @@ Container(
   child: Text('静态内容'),
 )
 
-// ✅ 编译时常量，性能更好
-const Container(
-  color: Colors.blue,
+// ✅ 内部属性使用 const，性能更好
+Container(
+  color: const Color(0xFF2196F3),  // 使用 const 颜色值
   padding: const EdgeInsets.all(16),
   child: const Text('静态内容'),
 )
 
-// ⚠️ 提示：只有当子组件和相关属性同样是 const 表达式（如 const Text / const EdgeInsets）时，整个 Container 才能声明为 const
+// ⚠️ 提示：Container 构造函数本身不能声明为 const，但内部属性（如 EdgeInsets、Text、Color）可以使用 const 来减少重建
 ```
 
 ### 3. 重用装饰对象

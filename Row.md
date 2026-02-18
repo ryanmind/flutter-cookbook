@@ -84,9 +84,9 @@ Row(
 #### MainAxisAlignment - 主轴对齐
 ```dart
 Row(
-  mainAxisAlignment: MainAxisAlignment.start,    // 左对齐（默认）
+  mainAxisAlignment: MainAxisAlignment.start,    // 起始对齐（默认，LTR 下为左对齐）
   // MainAxisAlignment.center,                     // 居中对齐
-  // MainAxisAlignment.end,                       // 右对齐
+  // MainAxisAlignment.end,                       // 结束对齐（LTR 下为右对齐）
   // MainAxisAlignment.spaceAround,               // 环绕间距
   // MainAxisAlignment.spaceBetween,               // 两端对齐
   // MainAxisAlignment.spaceEvenly,               // 均匀分布
@@ -114,7 +114,7 @@ Row(
 )
 ```
 
-> 使用 `CrossAxisAlignment.baseline` 时必须为 Row 设置 `textBaseline`，并且所有需要参与基线对齐的子组件都必须能够提供基线（例如 `Text`、`Baseline`）。否则会直接抛出运行时异常。
+> 使用 `CrossAxisAlignment.baseline` 时必须为 Row 设置 `textBaseline`，**且所有参与对齐的子组件必须能提供基线（如 Text、Baseline）**，否则会抛出运行时异常。不支持基线的组件（如 Container）无法参与基线对齐。
 
 ```dart
 Row(
