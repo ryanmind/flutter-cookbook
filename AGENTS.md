@@ -45,9 +45,19 @@ dart/
 ├── TabBar.md                    # TabBar 标签页组件用法详解
 ├── Navigation.md                # Navigation 导航组件用法详解
 │
-└── # 反馈组件
-    ├── Image.md                 # Image 图片组件用法详解
-    └── SnackBar.md              # SnackBar 消息提示组件用法详解
+├── # 反馈组件
+├── Image.md                     # Image 图片组件用法详解
+├── SnackBar.md                  # SnackBar 消息提示组件用法详解
+├── Progress.md                  # Progress 进度条组件用法详解
+├── Badge.md                     # Badge 徽章组件用法详解
+│
+├── # 展示组件
+├── Chip.md                      # Chip 标签组件用法详解
+├── BottomSheet.md               # BottomSheet 底部弹出组件用法详解
+│
+└── # 辅助组件
+    ├── Slider.md                # Slider 滑动选择器组件用法详解
+    └── PopupMenu.md             # PopupMenu 弹出菜单组件用法详解
 ```
 
 ## 文档说明
@@ -234,6 +244,55 @@ Flutter 消息提示组件用法详解，包含：
 - 高级用法：全局 SnackBar、队列管理
 - 与 ScaffoldMessenger 配合
 
+### 反馈组件（续）
+
+#### 25. Progress.md
+Flutter 进度条组件用法详解，包含：
+- CircularProgressIndicator：圆形进度条
+- LinearProgressIndicator：线性进度条
+- 确定进度与不确定进度模式
+- 自定义样式与颜色
+
+#### 26. Badge.md
+Flutter 徽章组件用法详解，包含：
+- 初级用法：小圆点徽章、数字徽章
+- 中级用法：自定义样式、位置偏移
+- 高级用法：动画效果、自定义内容
+- 与图标、导航栏配合
+
+### 展示组件
+
+#### 27. Chip.md
+Flutter 标签组件用法详解，包含：
+- Chip：基础标签
+- InputChip：输入标签
+- ChoiceChip：选择标签
+- FilterChip：筛选标签
+- ActionChip：操作标签
+
+#### 28. BottomSheet.md
+Flutter 底部弹出组件用法详解，包含：
+- showModalBottomSheet：模态底部弹出
+- showBottomSheet：持久底部弹出
+- 自定义高度和形状
+- 拖拽关闭与手势处理
+
+### 辅助组件
+
+#### 29. Slider.md
+Flutter 滑动选择器组件用法详解，包含：
+- Slider：单值滑动条
+- RangeSlider：范围滑动条
+- 分区显示与标签
+- 自定义样式
+
+#### 30. PopupMenu.md
+Flutter 弹出菜单组件用法详解，包含：
+- PopupMenuButton：Material 2 弹出菜单
+- MenuAnchor/MenuItemButton：Material 3 菜单
+- 自定义菜单项
+- 菜单位置与样式
+
 ## 文档规范
 
 ### 代码示例格式
@@ -296,9 +355,19 @@ Widget build(BuildContext context) {
 ### 反馈组件
 21. **Image** → Image.md（图片显示）
 22. **SnackBar** → SnackBar.md（消息提示）
+23. **Progress** → Progress.md（进度条）
+24. **Badge** → Badge.md（徽章）
+
+### 展示组件
+25. **Chip** → Chip.md（标签组件）
+26. **BottomSheet** → BottomSheet.md（底部弹出）
+
+### 辅助组件
+27. **Slider** → Slider.md（滑动选择器）
+28. **PopupMenu** → PopupMenu.md（弹出菜单）
 
 ### 组件系统
-23. **Material 3** → Flutter_Material3_组件指南.md（组件概览）
+29. **Material 3** → Flutter_Material3_组件指南.md（组件概览）
 
 ## Git 提交规范
 
