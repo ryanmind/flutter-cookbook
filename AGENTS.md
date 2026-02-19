@@ -106,10 +106,27 @@ dart/
 │       ├── RenderObject.md      # RenderObject 深入
 │       └── Testing.md           # 测试
 │
-└── widgets/                     # Flutter 组件学习
+├── advanced/                   # 进阶教程
+│   └── projects/               # 实战项目
+│       ├── ECommerceApp.md     # 电商应用实战
+│       └── SocialApp.md        # 社交应用实战
+│
+├── cicd/                       # CI/CD 自动化
+│   └── GitHubActions.md        # GitHub Actions 配置
+│
+├── patterns/                   # 设计模式
+│   └── DesignPatterns.md       # Flutter 常用设计模式
+│
+├── security/                   # 安全
+│   └── AppSecurity.md          # 应用安全最佳实践
+│
+├── packages/                   # 第三方库
+│   └── ThirdPartyLibraries.md  # 常用第三方库指南
+│
+└── widgets/                    # Flutter 组件学习
     ├── TODO.md
     │
-    ├── Animation/               # 动画组件
+    ├── Animation/              # 动画组件
     │   ├── AnimatedAlign.md     # AnimatedAlign 对齐动画
     │   ├── AnimatedBuilder.md   # AnimatedBuilder 动画构建器
     │   ├── AnimatedContainer.md # AnimatedContainer 容器动画
@@ -440,6 +457,48 @@ syntax/ 目录包含 Dart 语言和 Flutter 核心概念学习文档，按优先
 - **Accessibility.md** - 无障碍支持，语义化适配
 - **FlutterDesktop.md** - 桌面端开发，窗口与快捷键
 
+---
+
+### Advanced 进阶教程
+
+advanced/ 目录包含实战项目教程。
+
+#### 实战项目
+- **ECommerceApp.md** - 电商应用实战，完整项目流程
+- **SocialApp.md** - 社交应用实战，实时通讯与交互
+
+---
+
+### CI/CD 自动化
+
+cicd/ 目录包含持续集成与部署相关文档。
+
+- **GitHubActions.md** - GitHub Actions 工作流配置，自动化测试与构建
+
+---
+
+### Patterns 设计模式
+
+patterns/ 目录包含 Flutter 开发中常用的设计模式。
+
+- **DesignPatterns.md** - 创建型、结构型、行为型模式及 Flutter 特有模式
+
+---
+
+### Security 安全
+
+security/ 目录包含应用安全相关内容。
+
+- **AppSecurity.md** - 敏感数据保护、API 安全、代码安全等
+
+---
+
+### Packages 第三方库
+
+packages/ 目录包含常用第三方库使用指南。
+
+- **ThirdPartyLibraries.md** - 网络、状态管理、存储、图片等常用库介绍
+
 ## 文档统计
 
 | 分类 | 数量 |
@@ -451,7 +510,12 @@ syntax/ 目录包含 Dart 语言和 Flutter 核心概念学习文档，按优先
 | Base 基础组件 | 41 |
 | Material3 组件 | 49 |
 | Sliver 组件 | 5 |
-| **总计** | **133** |
+| Advanced 进阶教程 | 2 |
+| CI/CD 自动化 | 1 |
+| Patterns 设计模式 | 1 |
+| Security 安全 | 1 |
+| Packages 第三方库 | 1 |
+| **总计** | **139** |
 
 ## 文档规范
 
