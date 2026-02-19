@@ -158,7 +158,7 @@ ListView.custom(
       return ListTile(title: Text('项目 $index'));
     },
     childCount: 50,
-    findChildIndexCallback: (Key key) {
+    findItemIndexCallback: (Key key) {
       // 用于在子组件重排序时查找索引
       return null;
     },

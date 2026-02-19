@@ -44,23 +44,19 @@ MaterialApp(
 ThemeData(
   // 基础
   brightness: Brightness.light,     // 亮度
-  primaryColor: Colors.blue,        // 主色
-  primaryColorLight: Colors.blue[200],
-  primaryColorDark: Colors.blue[700],
+  colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
   
   // 背景
   scaffoldBackgroundColor: Colors.grey[100],
   canvasColor: Colors.white,
-  cardColor: Colors.white,
-  dividerColor: Colors.grey[300],
+  cardTheme: const CardThemeData(color: Colors.white),
+  dividerTheme: DividerThemeData(color: Colors.grey[300]),
   
   // 文本
   textTheme: TextTheme(...),
-  primaryTextTheme: TextTheme(...),
   
   // 图标
   iconTheme: IconThemeData(...),
-  primaryIconTheme: IconThemeData(...),
   
   // 组件主题
   appBarTheme: AppBarTheme(...),
@@ -322,9 +318,9 @@ ThemeData(
     brightness: Brightness.dark,
     // 使用深灰而非纯黑
     scaffoldBackgroundColor: Color(0xFF121212),
-    cardColor: Color(0xFF1E1E1E),
+    cardTheme: const CardThemeData(color: Color(0xFF1E1E1E)),
     // 提升表面层次
-    dialogBackgroundColor: Color(0xFF2C2C2C),
+    dialogTheme: const DialogThemeData(backgroundColor: Color(0xFF2C2C2C)),
   ),
 );
 

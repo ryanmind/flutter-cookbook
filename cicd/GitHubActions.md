@@ -38,7 +38,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.16.0'
+          flutter-version: '3.41.0'
           channel: 'stable'
           cache: true
 
@@ -80,7 +80,7 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.16.0'
+          flutter-version: '3.41.0'
           channel: 'stable'
           cache: true
 
@@ -110,7 +110,7 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.16.0'
+          flutter-version: '3.41.0'
           channel: 'stable'
           cache: true
 
@@ -132,7 +132,7 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.16.0'
+          flutter-version: '3.41.0'
           channel: 'stable'
           cache: true
 
@@ -446,7 +446,7 @@ jobs:
 ```yaml
 - uses: subosito/flutter-action@v2
   with:
-    flutter-version: '3.16.0'
+    flutter-version: '3.41.0'
     channel: 'stable'
     cache: true
     cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash'
@@ -458,7 +458,7 @@ jobs:
 ```yaml
 strategy:
   matrix:
-    flutter-version: ['3.10.0', '3.16.0']
+    flutter-version: ['3.35.0', '3.41.0']
     channel: ['stable', 'beta']
 ```
 

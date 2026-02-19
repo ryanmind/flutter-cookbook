@@ -624,6 +624,56 @@ MediaQuery(
 );
 ```
 
+### DropdownButtonFormField.value → initialValue
+
+Flutter 3.35+ 弃用 `DropdownButtonFormField` 的 `value` 参数，推荐使用 `initialValue`：
+
+```dart
+// ❌ 旧写法（已弃用）
+DropdownButtonFormField<String>(
+  value: _selectedValue,
+  items: [...],
+  onChanged: (value) { ... },
+);
+
+// ✅ 新写法（推荐）
+DropdownButtonFormField<String>(
+  initialValue: _selectedValue,
+  items: [...],
+  onChanged: (value) { ... },
+);
+```
+
+### containsSemantics → isSemantics
+
+Flutter 3.41+ 已将 `containsSemantics` 替换为 `isSemantics`：
+
+```dart
+// ❌ 旧写法（已弃用）
+final hasSemantics = semantics.containsSemantics(label: 'Button');
+
+// ✅ 新写法（推荐）
+final hasSemantics = semantics.isSemantics(label: 'Button');
+```
+
+### findChildIndexCallback → findItemIndexCallback
+
+Flutter 3.41+ 在 `ListView` 和 `SliverList` 的分离构造函数中弃用 `findChildIndexCallback`：
+
+```dart
+// ❌ 旧写法（已弃用）
+ListView.builder(
+  findChildIndexCallback: (key) => ...,
+  itemBuilder: ...,
+);
+
+// ✅ 新写法（推荐）
+ListView.builder(
+  findItemIndexCallback: (key) => ...,
+  itemBuilder: ...,
+);
+```
+
 ### 新增 API (Flutter 3.41)
 
 - `Navigator.popUntilWithResult` - 带返回值的弹出路由
