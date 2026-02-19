@@ -558,6 +558,23 @@ Widget build(BuildContext context) {
 - **Dart**: 3.11.0
 - **Material Design**: Material 3（默认）
 
+### 版本更新规范
+
+每次更新文档前，需执行以下步骤：
+
+1. **查询官网最新版本**
+   - 访问 https://docs.flutter.dev/release/release-notes 获取最新稳定版
+   - 访问 https://docs.flutter.dev/install/archive 确认 Flutter/Dart 版本对应关系
+
+2. **API 对齐检查**
+   - 检查 https://docs.flutter.dev/release/breaking-changes 的 Breaking Changes
+   - 使用 `grep` 搜索已弃用 API（如 `withOpacity`, `MaterialState`, `textScaleFactor`）
+   - 批量替换为新 API
+
+3. **更新版本号**
+   - 修改 AGENTS.md 中的版本信息
+   - 更新 API 迁移指南中的版本说明
+
 ## API 迁移指南
 
 ### Color.withOpacity → Color.withValues
