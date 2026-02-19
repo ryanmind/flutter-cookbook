@@ -586,7 +586,7 @@ class _ParticlePainter extends CustomPainter {
       canvas.drawCircle(
         Offset(particle.x * size.width, y * size.height),
         particle.size,
-        Paint()..color = Colors.blue.withOpacity(0.7),
+        Paint()..color = Colors.blue.withValues(alpha: 0.7),
       );
     }
   }

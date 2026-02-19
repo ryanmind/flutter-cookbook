@@ -313,7 +313,7 @@ GestureDetector(
     color: Colors.transparent,
     child: InkWell(
       onTap: () => print('点击'),
-      splashColor: Colors.blue.withOpacity(0.3),
+      splashColor: Colors.blue.withValues(alpha: 0.3),
       child: Container(
         padding: EdgeInsets.all(16),
         child: Text('涟漪效果'),

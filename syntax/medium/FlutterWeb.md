@@ -519,7 +519,7 @@ Widget build(BuildContext context) {
     onExit: (_) => setState(() => isHovered = false),
     child: AnimatedContainer(
       duration: Duration(milliseconds: 200),
-      color: isHovered ? Colors.blue.withOpacity(0.1) : Colors.transparent,
+      color: isHovered ? Colors.blue.withValues(alpha: 0.1) : Colors.transparent,
       child: Text('悬停查看效果'),
     ),
   );

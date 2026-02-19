@@ -42,7 +42,7 @@ Radio<String>(
 | `fillColor` | `Color?` | - | 填充颜色 |
 | `focusColor` | `Color?` | - | 聚焦颜色 |
 | `hoverColor` | `Color?` | - | 悬停颜色 |
-| `overlayColor` | `MaterialStateProperty<Color?>?` | - | 覆盖层颜色 |
+| `overlayColor` | `WidgetStateProperty<Color?>?` | - | 覆盖层颜色 |
 | `splashRadius` | `double?` | - | 水波纹半径 |
 | `materialTapTargetSize` | `MaterialTapTargetSize?` | - | 点击区域大小 |
 | `visualDensity` | `VisualDensity?` | - | 视觉密度 |
@@ -326,7 +326,7 @@ class CustomRadio<T> extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
-          color: isSelected ? (activeColor ?? Colors.blue).withOpacity(0.1) : null,
+          color: isSelected ? (activeColor ?? Colors.blue).withValues(alpha: 0.1) : null,
           border: Border.all(
             color: isSelected ? (activeColor ?? Colors.blue) : Colors.grey,
             width: isSelected ? 2 : 1,

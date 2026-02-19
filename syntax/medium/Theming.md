@@ -555,7 +555,7 @@ extension ThemeExtensions on ThemeData {
   // 自定义阴影
   List<BoxShadow> get shadowS => [
     BoxShadow(
-      color: Colors.black.withOpacity(0.1),
+      color: Colors.black.withValues(alpha: 0.1),
       blurRadius: 4,
       offset: Offset(0, 2),
     ),
@@ -563,7 +563,7 @@ extension ThemeExtensions on ThemeData {
   
   List<BoxShadow> get shadowM => [
     BoxShadow(
-      color: Colors.black.withOpacity(0.15),
+      color: Colors.black.withValues(alpha: 0.15),
       blurRadius: 8,
       offset: Offset(0, 4),
     ),

@@ -159,7 +159,7 @@ class CustomScrollbarBehavior extends ScrollBehavior {
       controller: details.controller,
       thickness: 8,
       radius: Radius.circular(4),
-      thumbColor: Colors.blue.withOpacity(0.5),
+      thumbColor: Colors.blue.withValues(alpha: 0.5),
       child: child,
     );
   }

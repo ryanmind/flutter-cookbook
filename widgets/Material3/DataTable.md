@@ -55,7 +55,7 @@ DataTable(
 | `selected` | `bool` | 是否选中 |
 | `onSelectChanged` | `ValueChanged<bool?>?` | 选择变化回调 |
 | `onLongPress` | `VoidCallback?` | 长按回调 |
-| `color` | `MaterialStateProperty<Color?>?` | 行颜色 |
+| `color` | `WidgetStateProperty<Color?>?` | 行颜色 |
 
 ### 1.5 DataCell 属性
 
@@ -636,8 +636,8 @@ PaginatedDataTable(
 | `headingRowHeight` | `double?` | 表头行高度 |
 | `horizontalMargin` | `double?` | 水平边距 |
 | `columnSpacing` | `double?` | 列间距 |
-| `headingRowColor` | `MaterialStateProperty<Color?>?` | 表头行颜色 |
-| `dataRowColor` | `MaterialStateProperty<Color?>?` | 数据行颜色 |
+| `headingRowColor` | `WidgetStateProperty<Color?>?` | 表头行颜色 |
+| `dataRowColor` | `WidgetStateProperty<Color?>?` | 数据行颜色 |
 
 ## 总结
 

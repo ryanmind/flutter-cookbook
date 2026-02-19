@@ -38,7 +38,7 @@ Text(
 | `overflow` | `TextOverflow?` | - | 溢出处理 |
 | `softWrap` | `bool` | `true` | 是否自动换行 |
 | `textDirection` | `TextDirection?` | - | 文本方向 |
-| `textScaleFactor` | `double?` | - | 缩放因子 |
+| `textScaler` | `TextScaler?` | - | 文本缩放策略 |
 | `locale` | `Locale?` | - | 语言环境 |
 | `semanticsLabel` | `String?` | - | 语义标签 |
 

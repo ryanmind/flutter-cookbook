@@ -183,14 +183,14 @@ Image.network(
 // 遮罩效果
 Image.network(
   'https://picsum.photos/200',
-  color: Colors.blue.withOpacity(0.3),
+  color: Colors.blue.withValues(alpha: 0.3),
   colorBlendMode: BlendMode.overlay,
 )
 
 // 暗化效果
 Image.network(
   'https://picsum.photos/200',
-  color: Colors.black.withOpacity(0.5),
+  color: Colors.black.withValues(alpha: 0.5),
   colorBlendMode: BlendMode.darken,
 )
 ```
@@ -449,7 +449,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
                   shape: BoxShape.circle,
                   color: index == _currentIndex
                       ? Colors.white
-                      : Colors.white.withOpacity(0.5),
+                      : Colors.white.withValues(alpha: 0.5),
                 ),
               ),
             ),

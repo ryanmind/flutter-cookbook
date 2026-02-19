@@ -40,10 +40,10 @@ Switch(
 | `inactiveTrackColor` | `Color?` | - | 关闭时轨道颜色 |
 | `activeThumbImage` | `ImageProvider?` | - | 开启时滑块图片 |
 | `inactiveThumbImage` | `ImageProvider?` | - | 关闭时滑块图片 |
-| `thumbColor` | `MaterialStateProperty<Color?>?` | - | 滑块颜色 |
-| `trackColor` | `MaterialStateProperty<Color?>?` | - | 轨道颜色 |
-| `trackOutlineColor` | `MaterialStateProperty<Color?>?` | - | 轨道边框颜色 |
-| `thumbIcon` | `MaterialStateProperty<Icon?>?` | - | 滑块图标 |
+| `thumbColor` | `WidgetStateProperty<Color?>?` | - | 滑块颜色 |
+| `trackColor` | `WidgetStateProperty<Color?>?` | - | 轨道颜色 |
+| `trackOutlineColor` | `WidgetStateProperty<Color?>?` | - | 轨道边框颜色 |
+| `thumbIcon` | `WidgetStateProperty<Icon?>?` | - | 滑块图标 |
 | `splashRadius` | `double?` | - | 水波纹半径 |
 | `materialTapTargetSize` | `MaterialTapTargetSize?` | - | 点击区域大小 |
 | `dragStartBehavior` | `DragStartBehavior` | - | 拖动行为 |
@@ -207,9 +207,9 @@ Switch(
   value: _isEnabled,
   trackColor: WidgetStateProperty.resolveWith((states) {
     if (states.contains(WidgetState.selected)) {
-      return Colors.green.withOpacity(0.5);
+      return Colors.green.withValues(alpha: 0.5);
     }
-    return Colors.grey.withOpacity(0.3);
+    return Colors.grey.withValues(alpha: 0.3);
   }),
   trackOutlineColor: WidgetStateProperty.resolveWith((states) {
     if (states.contains(WidgetState.selected)) {

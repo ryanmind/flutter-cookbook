@@ -283,7 +283,7 @@ Stack(
       widthFactor: 1.0,
       heightFactor: 0.5,
       alignment: Alignment.topCenter,
-      child: Container(color: Colors.blue.withOpacity(0.3)),
+      child: Container(color: Colors.blue.withValues(alpha: 0.3)),
     ),
     // 内容
     Center(child: Text('内容')),

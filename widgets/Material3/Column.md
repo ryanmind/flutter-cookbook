@@ -1528,7 +1528,7 @@ class CardColumnLayout extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 8,
             offset: Offset(0, 2),
           ),
@@ -1594,7 +1594,7 @@ class CardColumnLayout extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: color.withOpacity(0.1),
+            color: color.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Row(
@@ -1693,7 +1693,7 @@ class MasonryColumnLayout extends StatelessWidget {
           margin: EdgeInsets.only(bottom: 8),
           height: height,
           decoration: BoxDecoration(
-            color: color.withOpacity(0.3),
+            color: color.withValues(alpha: 0.3),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Padding(
@@ -1936,7 +1936,7 @@ class StatefulColumnExample extends ConsumerWidget {
                   borderRadius: BorderRadius.circular(8),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 2,
                       offset: Offset(0, 1),
                     ),
@@ -2068,7 +2068,7 @@ class _PerformantListColumnState extends State<PerformantListColumn> {
         borderRadius: BorderRadius.circular(8),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 4,
             offset: Offset(0, 2),
           ),

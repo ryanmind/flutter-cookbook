@@ -196,7 +196,7 @@ Positioned(
 
 // Positioned.fill 填满整个 Stack
 Positioned.fill(
-  child: Container(color: Colors.red.withOpacity(0.5)),
+  child: Container(color: Colors.red.withValues(alpha: 0.5)),
 )
 ```
 
@@ -271,7 +271,7 @@ Stack(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 8),
+          BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 8),
         ],
       ),
       child: Center(child: Text('卡片内容')),
@@ -314,7 +314,7 @@ Stack(
             end: Alignment.bottomCenter,
             colors: [
               Colors.transparent,
-              Colors.black.withOpacity(0.7),
+              Colors.black.withValues(alpha: 0.7),
             ],
           ),
         ),
@@ -580,7 +580,7 @@ class WatermarkStack extends StatelessWidget {
                   watermark,
                   style: TextStyle(
                     fontSize: 48,
-                    color: Colors.black.withOpacity(0.05),
+                    color: Colors.black.withValues(alpha: 0.05),
                     fontWeight: FontWeight.bold,
                   ),
                 ),

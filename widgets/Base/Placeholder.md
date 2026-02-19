@@ -191,7 +191,7 @@ class DevPlaceholder extends StatelessWidget {
     if (kDebugMode) {
       return Stack(
         children: [
-          Placeholder(color: Colors.red.withOpacity(0.3)),
+          Placeholder(color: Colors.red.withValues(alpha: 0.3)),
           child,
         ],
       );

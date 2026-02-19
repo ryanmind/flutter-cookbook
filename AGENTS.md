@@ -552,6 +552,68 @@ Widget build(BuildContext context) {
 [Docs]feat: 新增 14 个 Flutter 组件学习文档
 ```
 
+## 版本信息
+
+- **Flutter**: 3.41.0
+- **Dart**: 3.11.0
+- **Material Design**: Material 3（默认）
+
+## API 迁移指南
+
+### Color.withOpacity → Color.withValues
+
+Flutter 3.38+ 推荐使用 `withValues` 替代 `withOpacity`：
+
+```dart
+// ❌ 旧写法（已弃用）
+Color color = Colors.blue.withOpacity(0.5);
+
+// ✅ 新写法（推荐）
+Color color = Colors.blue.withValues(alpha: 0.5);
+```
+
+### MaterialState → WidgetState
+
+Flutter 3.22+ 已将 `MaterialState` 重命名为 `WidgetState`：
+
+```dart
+// ❌ 旧写法（已弃用）
+WidgetStateProperty.resolveWith((states) {
+  if (states.contains(MaterialState.pressed)) { ... }
+});
+
+// ✅ 新写法（推荐）
+WidgetStateProperty.resolveWith((states) {
+  if (states.contains(WidgetState.pressed)) { ... }
+});
+```
+
+### textScaleFactor → TextScaler
+
+Flutter 3.16+ 已将 `textScaleFactor` 替换为 `TextScaler`：
+
+```dart
+// ❌ 旧写法（已弃用）
+final scale = MediaQuery.of(context).textScaleFactor;
+
+// ✅ 新写法（推荐）
+final scaler = MediaQuery.of(context).textScaler;
+final scale = scaler.scale(1.0);  // 获取缩放值
+
+// 禁用文本缩放
+MediaQuery(
+  data: MediaQuery.of(context).copyWith(textScaler: TextScaler.noScaling),
+  child: ...,
+);
+```
+
+### 新增 API (Flutter 3.41)
+
+- `Navigator.popUntilWithResult` - 带返回值的弹出路由
+- `ColorFilter.saturation` - 饱和度滤镜
+- `RepeatingAnimationBuilder` - 循环动画构建器
+- `DeviceOrientationBuilder` - 设备方向构建器
+
 ---
 
 *最后更新: 2026-02-19*

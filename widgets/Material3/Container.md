@@ -102,7 +102,7 @@ Container(
     borderRadius: BorderRadius.circular(8.0),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.1),
+        color: Colors.black.withValues(alpha: 0.1),
         blurRadius: 4.0,
       ),
     ],
@@ -131,7 +131,7 @@ Container(
 
 // 使用透明度
 Container(
-  color: Colors.red.withOpacity(0.5),  // 半透明红色
+  color: Colors.red.withValues(alpha: 0.5),  // 半透明红色
   child: Text('半透明背景'),
 )
 ```
@@ -245,7 +245,7 @@ Container(
   ),
   foregroundDecoration: BoxDecoration(
     gradient: LinearGradient(
-      colors: [Colors.black.withOpacity(0.0), Colors.black.withOpacity(0.4)],
+      colors: [Colors.black.withValues(alpha: 0.0), Colors.black.withValues(alpha: 0.4)],
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
     ),
@@ -386,7 +386,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
             boxShadow: [
               if (_expanded)
                 BoxShadow(
-                  color: Colors.deepPurple.withOpacity(0.3),
+                  color: Colors.deepPurple.withValues(alpha: 0.3),
                   blurRadius: 16.0,
                   offset: Offset(0, 8),
                 ),
@@ -477,7 +477,7 @@ class CardExample extends StatelessWidget {
         borderRadius: BorderRadius.circular(12.0),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 6.0,
             offset: Offset(0, 3),
           ),
@@ -498,7 +498,7 @@ class CardExample extends StatelessWidget {
           Text(
             description,
             style: TextStyle(
-              color: Colors.white.withOpacity(0.8),
+              color: Colors.white.withValues(alpha: 0.8),
             ),
           ),
         ],
@@ -533,7 +533,7 @@ class ResponsiveExample extends StatelessWidget {
             borderRadius: BorderRadius.circular(isLargeScreen ? 16.0 : 12.0),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.2),
+                color: Colors.black.withValues(alpha: 0.2),
                 blurRadius: isLargeScreen ? 10.0 : 6.0,
                 spreadRadius: 2.0,
               ),
@@ -560,7 +560,7 @@ class ResponsiveExample extends StatelessWidget {
               Text(
                 '屏幕宽度: ${screenWidth.toInt()}px',
                 style: TextStyle(
-                  color: Colors.white.withOpacity(0.8),
+                  color: Colors.white.withValues(alpha: 0.8),
                 ),
               ),
             ],
@@ -709,7 +709,7 @@ class DecorationExample extends StatelessWidget {
         borderRadius: BorderRadius.circular(12.0),
         boxShadow: [
           BoxShadow(
-            color: Colors.orange.withOpacity(0.3),
+            color: Colors.orange.withValues(alpha: 0.3),
             blurRadius: 10.0,
             spreadRadius: 2.0,
             offset: Offset(0, 4),
@@ -742,7 +742,7 @@ class DecorationExample extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.red.withOpacity(0.3),
+            color: Colors.red.withValues(alpha: 0.3),
             blurRadius: 12.0,
             spreadRadius: 3.0,
             offset: Offset(0, 6),
@@ -942,7 +942,7 @@ class ProfileCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(20.0),
             boxShadow: [
               BoxShadow(
-                color: Colors.blue.withOpacity(0.3),
+                color: Colors.blue.withValues(alpha: 0.3),
                 blurRadius: 15.0,
                 spreadRadius: 5.0,
                 offset: Offset(0, 8),
@@ -982,7 +982,7 @@ class ProfileCard extends StatelessWidget {
               Text(
                 'Flutter 开发工程师',
                 style: TextStyle(
-                  color: Colors.white.withOpacity(0.9),
+                  color: Colors.white.withValues(alpha: 0.9),
                   fontSize: 16,
                 ),
               ),
@@ -994,7 +994,7 @@ class ProfileCard extends StatelessWidget {
                   vertical: 12.0,
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(12.0),
                 ),
                 child: Text(
@@ -1059,7 +1059,7 @@ class ButtonStyles extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.0),
           boxShadow: [
             BoxShadow(
-              color: Colors.blue.withOpacity(0.3),
+              color: Colors.blue.withValues(alpha: 0.3),
               blurRadius: 8.0,
               offset: Offset(0, 4),
             ),
@@ -1116,7 +1116,7 @@ class ButtonStyles extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.0),
           boxShadow: [
             BoxShadow(
-              color: Colors.red.withOpacity(0.3),
+              color: Colors.red.withValues(alpha: 0.3),
               blurRadius: 8.0,
               offset: Offset(0, 4),
             ),
@@ -1150,7 +1150,7 @@ class ButtonStyles extends StatelessWidget {
           borderRadius: BorderRadius.circular(25.0),
           boxShadow: [
             BoxShadow(
-              color: Colors.green.withOpacity(0.3),
+              color: Colors.green.withValues(alpha: 0.3),
               blurRadius: 8.0,
               offset: Offset(0, 4),
             ),
@@ -1286,7 +1286,7 @@ class MyWidget extends StatelessWidget {
     borderRadius: BorderRadius.circular(12.0),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.1),
+        color: Colors.black.withValues(alpha: 0.1),
         blurRadius: 8.0,
       ),
     ],

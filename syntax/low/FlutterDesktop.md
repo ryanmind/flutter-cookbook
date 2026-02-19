@@ -308,7 +308,7 @@ class _HoverEffectState extends State<HoverEffect> {
       child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
         decoration: BoxDecoration(
-          color: _isHovered ? Colors.blue.withOpacity(0.1) : Colors.transparent,
+          color: _isHovered ? Colors.blue.withValues(alpha: 0.1) : Colors.transparent,
           border: _isHovered ? Border.all(color: Colors.blue) : null,
         ),
         child: widget.child,

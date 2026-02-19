@@ -173,7 +173,7 @@ Opacity(
 
 // Container color：只有背景透明
 Container(
-  color: Colors.blue.withOpacity(0.5),
+  color: Colors.blue.withValues(alpha: 0.5),
   child: Text('文字不会变淡'),  // 文字不变
 )
 ```
@@ -376,8 +376,8 @@ if (visible) Container(...)
 // Opacity：组件级别的透明度
 Opacity(opacity: 0.5, child: ...)
 
-// Color.withOpacity：颜色级别的透明度
-Container(color: Colors.blue.withOpacity(0.5))
+// Color.withValues：颜色级别的透明度
+Container(color: Colors.blue.withValues(alpha: 0.5))
 
 // 区别：Opacity 影响整个子组件，包括文字、图片等
 ```
@@ -387,7 +387,7 @@ Container(color: Colors.blue.withOpacity(0.5))
 | 方案 | 用途 | 特点 |
 |------|------|------|
 | **Opacity** | 整体透明 | 影响所有子内容 |
-| **Color.withOpacity** | 颜色透明 | 只影响特定颜色 |
+| **Color.withValues** | 颜色透明 | 只影响特定颜色 |
 | **AnimatedOpacity** | 动画透明 | 自动过渡动画 |
 | **Visibility** | 显示/隐藏 | 无动画，性能好 |
 
@@ -397,8 +397,8 @@ Container(color: Colors.blue.withOpacity(0.5))
 // 需要整体透明 → Opacity
 Opacity(opacity: 0.5, child: ...)
 
-// 只需背景透明 → Color.withOpacity
-Container(color: Colors.blue.withOpacity(0.5))
+// 只需背景透明 → Color.withValues
+Container(color: Colors.blue.withValues(alpha: 0.5))
 
 // 需要淡入淡出 → AnimatedOpacity
 AnimatedOpacity(opacity: visible ? 1.0 : 0.0, ...)

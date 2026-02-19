@@ -446,7 +446,7 @@ SliderTheme(
     inactiveTrackColor: Colors.blue[100],
     thumbShape: RoundSliderThumbShape(enabledThumbRadius: 12),
     thumbColor: Colors.blue,
-    overlayColor: Colors.blue.withOpacity(0.2),
+    overlayColor: Colors.blue.withValues(alpha: 0.2),
     overlayShape: RoundSliderOverlayShape(overlayRadius: 24),
     tickMarkShape: RoundSliderTickMarkShape(),
     activeTickMarkColor: Colors.blue[700],
@@ -847,7 +847,7 @@ class AppSliderTheme {
     activeTrackColor: Colors.blue,
     inactiveTrackColor: Colors.blue[100],
     thumbColor: Colors.white,
-    overlayColor: Colors.blue.withOpacity(0.2),
+    overlayColor: Colors.blue.withValues(alpha: 0.2),
     trackHeight: 4,
     thumbShape: RoundSliderThumbShape(enabledThumbRadius: 8),
   );

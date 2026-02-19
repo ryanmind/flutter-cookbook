@@ -44,7 +44,7 @@ RichText(
 | `textDirection` | `TextDirection?` | - | 文本方向 |
 | `softWrap` | `bool` | `true` | 是否自动换行 |
 | `overflow` | `TextOverflow` | `TextOverflow.clip` | 溢出处理 |
-| `textScaleFactor` | `double?` | - | 缩放因子 |
+| `textScaler` | `TextScaler?` | - | 文本缩放策略 |
 | `maxLines` | `int?` | - | 最大行数 |
 | `locale` | `Locale?` | - | 语言环境 |
 | `strutStyle` | `StrutStyle?` | - | 基线对齐样式 |

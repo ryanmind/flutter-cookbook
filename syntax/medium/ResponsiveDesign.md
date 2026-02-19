@@ -68,8 +68,8 @@ Widget build(BuildContext context) {
   // 屏幕方向
   final orientation = mediaQuery.orientation;
 
-  // 文本缩放因子
-  final textScaleFactor = mediaQuery.textScaleFactor;
+  // 文本缩放
+  final textScaler = mediaQuery.textScaler;
 
   return Container();
 }

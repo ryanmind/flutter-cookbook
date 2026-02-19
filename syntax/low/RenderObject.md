@@ -92,7 +92,7 @@ class RenderCustomBox extends RenderBox {
   @override
   void paint(PaintingContext context, Offset offset) {
     // 绘制背景
-    final paint = Paint()..color = Colors.blue.withOpacity(0.3);
+    final paint = Paint()..color = Colors.blue.withValues(alpha: 0.3);
     context.canvas.drawRect(offset & size, paint);
 
     // 绘制子组件

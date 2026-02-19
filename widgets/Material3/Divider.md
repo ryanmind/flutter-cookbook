@@ -438,7 +438,7 @@ class SectionDivider extends StatelessWidget {
         Divider(
           height: 1,
           thickness: 8,
-          color: color?.withOpacity(0.1) ?? Colors.grey[200],
+          color: color?.withValues(alpha: 0.1) ?? Colors.grey[200],
         ),
       ],
     );

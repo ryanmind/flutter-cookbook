@@ -377,7 +377,7 @@ class _PositionDragState extends State<PositionDrag> {
             feedback: Container(
               width: 80,
               height: 80,
-              color: Colors.blue.withOpacity(0.5),
+              color: Colors.blue.withValues(alpha: 0.5),
             ),
             childWhenDragging: Container(),
             child: Container(
@@ -417,7 +417,7 @@ class _MultiDragExampleState extends State<MultiDragExample> {
               feedback: Container(
                 width: 50,
                 height: 50,
-                color: color.withOpacity(0.7),
+                color: color.withValues(alpha: 0.7),
               ),
               child: Container(
                 width: 50,

@@ -420,7 +420,7 @@ class _ParallaxEffectState extends State<ParallaxEffect> {
               child: Container(
                 width: 100,
                 height: 100,
-                color: Colors.blue.withOpacity(0.5),
+                color: Colors.blue.withValues(alpha: 0.5),
               ),
             ),
             // 前景层（快速）

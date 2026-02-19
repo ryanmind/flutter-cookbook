@@ -35,7 +35,7 @@ final height = MediaQuery.of(context).size.height;
 |------|------|------|
 | `size` | `Size` | 屏幕尺寸 |
 | `devicePixelRatio` | `double` | 像素密度 |
-| `textScaleFactor` | `double` | 文本缩放因子 |
+| `textScaler` | `TextScaler` | 文本缩放策略 |
 | `platformBrightness` | `Brightness` | 系统亮度模式 |
 | `padding` | `EdgeInsets` | 安全区域内边距 |
 | `viewPadding` | `EdgeInsets` | 视图内边距 |
@@ -182,15 +182,18 @@ class ThemeWidget extends StatelessWidget {
 class TextScaleExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final textScale = MediaQuery.of(context).textScaleFactor;
+    final textScaler = MediaQuery.of(context).textScaler;
+    final scale = textScaler.scale(1.0);
     
     return Column(
       children: [
-        Text('文本会跟随系统缩放: $textScale'),
+        Text('文本会跟随系统缩放: $scale'),
         // 忽略系统缩放
-        Text(
-          '固定大小文本',
-          textScaleFactor: 1.0,  // 忽略系统设置
+        MediaQuery(
+          data: MediaQuery.of(context).copyWith(
+            textScaler: TextScaler.noScaling,
+          ),
+          child: Text('固定大小文本'),
         ),
       ],
     );
@@ -325,7 +328,7 @@ MediaQuery.removeViewInsets(
 ```dart
 MediaQuery(
   data: MediaQuery.of(context).copyWith(
-    textScaleFactor: 1.0,  // 强制文本缩放为 1
+    textScaler: TextScaler.noScaling,  // 禁用文本缩放
   ),
   child: Text('不受系统文本缩放影响'),
 )

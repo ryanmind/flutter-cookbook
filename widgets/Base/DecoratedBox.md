@@ -212,7 +212,7 @@ class TagWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(4),
         border: Border.all(color: color),
       ),
@@ -353,7 +353,7 @@ DecoratedBox(
     border: Border.all(color: Colors.white, width: 2),
     boxShadow: [
       BoxShadow(
-        color: Colors.orange.withOpacity(0.5),
+        color: Colors.orange.withValues(alpha: 0.5),
         blurRadius: 12,
         offset: Offset(0, 6),
       ),
