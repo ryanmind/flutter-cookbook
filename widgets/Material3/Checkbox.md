@@ -31,9 +31,12 @@ Checkbox(
 | `onChanged` | `ValueChanged<bool?>?` | 值变化回调 |
 | `activeColor` | `Color?` | 选中颜色 |
 | `checkColor` | `Color?` | 勾选颜色 |
+| `fillColor` | `WidgetStateProperty<Color?>?` | 填充颜色 |
+| `overlayColor` | `WidgetStateProperty<Color?>?` | 覆盖层颜色 |
 | `tristate` | `bool` | 是否支持三态 |
 | `shape` | `OutlinedBorder?` | 形状 |
 | `side` | `BorderSide?` | 边框样式 |
+| `isError` | `bool` | 是否显示错误状态 |
 
 ### 1.4 基础示例
 
@@ -194,10 +197,14 @@ Radio<String>(
 
 | 属性 | 类型 | 说明 |
 |------|------|------|
-| `value` | `T` | 当前选项值 |
-| `groupValue` | `T?` | 组选中值 |
-| `onChanged` | `ValueChanged<T?>?` | 值变化回调 |
+| `value` | `T` | 当前 Radio 的值（必需） |
+| `groupValue` | `T?` | 当前分组的选中值 |
+| `onChanged` | `ValueChanged<T?>?` | 选中回调 |
+| `toggleable` | `bool` | 是否可取消选中 |
 | `activeColor` | `Color?` | 选中颜色 |
+| `fillColor` | `Color?` | 填充颜色 |
+| `overlayColor` | `WidgetStateProperty<Color?>?` | 覆盖层颜色 |
+| `visualDensity` | `VisualDensity?` | 视觉密度 |
 | `toggleable` | `bool` | 是否可取消选中 |
 | `visualDensity` | `VisualDensity?` | 视觉密度 |
 
@@ -371,14 +378,16 @@ Switch(
 
 | 属性 | 类型 | 说明 |
 |------|------|------|
-| `value` | `bool` | 当前值 |
+| `value` | `bool` | 当前值（必需） |
 | `onChanged` | `ValueChanged<bool>?` | 值变化回调 |
-| `activeColor` | `Color?` | 开启状态轨道颜色 |
-| `activeTrackColor` | `Color?` | 开启状态轨道颜色 |
-| `inactiveThumbColor` | `Color?` | 关闭状态滑块颜色 |
-| `inactiveTrackColor` | `Color?` | 关闭状态轨道颜色 |
+| `activeColor` | `Color?` | 开启时滑块颜色 |
+| `activeTrackColor` | `Color?` | 开启时轨道颜色 |
+| `inactiveThumbColor` | `Color?` | 关闭时滑块颜色 |
+| `inactiveTrackColor` | `Color?` | 关闭时轨道颜色 |
 | `thumbColor` | `WidgetStateProperty<Color?>?` | 滑块颜色 |
 | `trackColor` | `WidgetStateProperty<Color?>?` | 轨道颜色 |
+| `trackOutlineColor` | `WidgetStateProperty<Color?>?` | 轨道边框颜色 |
+| `thumbIcon` | `WidgetStateProperty<Icon?>?` | 滑块图标 |
 
 ### 3.4 基础示例
 
