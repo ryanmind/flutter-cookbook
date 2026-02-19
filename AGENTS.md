@@ -71,7 +71,29 @@ dart/
 ├── Flutter_Material3_组件指南.md  # Material 3 组件学习指南
 │
 ├── syntax/                      # Dart 语法学习
-│   └── TODO.md
+│   ├── TODO.md
+│   ├── high/                    # 高优先级（基础核心）
+│   │   ├── Dart_Async.md        # Dart 异步编程
+│   │   ├── Dart_Basics.md       # Dart 基础语法
+│   │   ├── Dart_OOP.md          # Dart 面向对象
+│   │   ├── Navigator.md         # 导航路由
+│   │   ├── Provider.md          # Provider 状态管理
+│   │   └── StateManagement.md   # 状态管理概述
+│   ├── medium/                  # 中优先级（进阶特性）
+│   │   ├── Dart_Generics.md     # Dart 泛型
+│   │   ├── GoRouter.md          # GoRouter 路由
+│   │   ├── Networking.md        # 网络请求
+│   │   ├── Riverpod.md          # Riverpod 状态管理
+│   │   ├── Storage.md           # 数据存储
+│   │   └── Theming.md           # 主题定制
+│   └── low/                     # 低优先级（高级特性）
+│       ├── Animation.md         # 动画系统
+│       ├── Bloc.md              # Bloc 状态管理
+│       ├── Gesture.md           # 手势处理
+│       ├── I18n.md              # 国际化
+│       ├── Lifecycle.md         # 生命周期
+│       ├── Performance.md       # 性能优化
+│       └── Testing.md           # 测试
 │
 └── widgets/                     # Flutter 组件学习
     ├── TODO.md
@@ -367,15 +389,47 @@ widgets/Sliver/ 目录包含 Flutter Sliver 相关组件，用于 CustomScrollVi
 #### 头部
 - **SliverPersistentHeader.md** - 持久化头部，可折叠固定
 
+### Syntax 语法文档
+
+syntax/ 目录包含 Dart 语言和 Flutter 核心概念学习文档，按优先级分类。
+
+#### 高优先级（基础核心）
+- **Dart_Basics.md** - Dart 基础语法，变量、类型、函数等
+- **Dart_OOP.md** - Dart 面向对象，类、继承、混入等
+- **Dart_Async.md** - Dart 异步编程，Future、Stream、async/await
+- **StateManagement.md** - 状态管理概述，核心概念与方案对比
+- **Provider.md** - Provider 状态管理，官方推荐的基础方案
+- **Navigator.md** - 导航路由，页面跳转与参数传递
+
+#### 中优先级（进阶特性）
+- **Dart_Generics.md** - Dart 泛型，类型参数与约束
+- **Networking.md** - 网络请求，HTTP 客户端与数据解析
+- **Storage.md** - 数据存储，SharedPreferences、数据库等
+- **Theming.md** - 主题定制，深色模式与自定义主题
+- **GoRouter.md** - GoRouter 声明式路由
+- **Riverpod.md** - Riverpod 状态管理，响应式编程
+
+#### 低优先级（高级特性）
+- **Animation.md** - 动画系统，AnimationController、Tween 等
+- **Gesture.md** - 手势处理，手势识别与竞争
+- **Lifecycle.md** - 生命周期，Widget 与 App 生命周期
+- **Performance.md** - 性能优化，渲染优化与内存管理
+- **I18n.md** - 国际化，多语言支持
+- **Testing.md** - 测试，单元测试与 Widget 测试
+- **Bloc.md** - Bloc 状态管理，事件驱动架构
+
 ## 文档统计
 
 | 分类 | 数量 |
 |------|------|
+| Syntax 高优先级 | 6 |
+| Syntax 中优先级 | 6 |
+| Syntax 低优先级 | 7 |
 | Animation 动画组件 | 8 |
 | Base 基础组件 | 41 |
 | Material3 组件 | 49 |
 | Sliver 组件 | 5 |
-| **总计** | **103** |
+| **总计** | **122** |
 
 ## 文档规范
 
