@@ -49,8 +49,19 @@
 28. **MediaQuery** → widgets/Base/MediaQuery.md
 29. **LayoutBuilder** → widgets/Base/LayoutBuilder.md
 
+### 第8阶段：动画组件
+30. **AnimatedContainer** → widgets/Animation/AnimatedContainer.md
+31. **AnimatedOpacity** → widgets/Animation/AnimatedOpacity.md
+32. **AnimatedAlign** → widgets/Animation/AnimatedAlign.md
+33. **AnimatedSwitcher** → widgets/Animation/AnimatedSwitcher.md
+
+### 第9阶段：Sliver 组件
+34. **SliverAppBar** → widgets/Sliver/SliverAppBar.md
+35. **SliverList** → widgets/Sliver/SliverList.md
+36. **SliverGrid** → widgets/Sliver/SliverGrid.md
+
 ### Material 3 概览
-30. **Material 3 指南** → Flutter_Material3_组件指南.md
+37. **Material 3 指南** → Flutter_Material3_组件指南.md
 
 ## 目录结构
 
@@ -65,11 +76,23 @@ dart/
 └── widgets/                     # Flutter 组件学习
     ├── TODO.md
     │
+    ├── Animation/               # 动画组件
+    │   ├── AnimatedAlign.md     # AnimatedAlign 对齐动画
+    │   ├── AnimatedBuilder.md   # AnimatedBuilder 动画构建器
+    │   ├── AnimatedContainer.md # AnimatedContainer 容器动画
+    │   ├── AnimatedCrossFade.md # AnimatedCrossFade 淡入淡出切换
+    │   ├── AnimatedOpacity.md   # AnimatedOpacity 透明度动画
+    │   ├── AnimatedPadding.md   # AnimatedPadding 内边距动画
+    │   ├── AnimatedPositioned.md # AnimatedPositioned 位置动画
+    │   └── AnimatedSwitcher.md  # AnimatedSwitcher 组件切换
+    │
     ├── Base/                    # 基础组件
     │   ├── Align.md             # Align 对齐组件
     │   ├── AspectRatio.md       # AspectRatio 宽高比组件
+    │   ├── Baseline.md          # Baseline 基线对齐组件
     │   ├── Center.md            # Center 居中组件
     │   ├── ClipOval.md          # ClipOval 椭圆裁剪组件
+    │   ├── ClipPath.md          # ClipPath 路径裁剪组件
     │   ├── ClipRect.md          # ClipRect 矩形裁剪组件
     │   ├── ClipRRect.md         # ClipRRect 圆角矩形裁剪组件
     │   ├── ConstrainedBox.md    # ConstrainedBox 约束盒组件
@@ -80,73 +103,112 @@ dart/
     │   ├── Draggable.md         # Draggable 可拖拽组件
     │   ├── DragTarget.md        # DragTarget 拖拽目标组件
     │   ├── FittedBox.md         # FittedBox 缩放适应组件
+    │   ├── Flow.md              # Flow 流式布局组件
     │   ├── Form.md              # Form 表单组件
     │   ├── FormField.md         # FormField 表单字段组件
+    │   ├── FractionallySizedBox.md # FractionallySizedBox 百分比尺寸
     │   ├── GestureDetector.md   # GestureDetector 手势检测组件
     │   ├── Hero.md              # Hero 动画过渡组件
     │   ├── InteractiveViewer.md # InteractiveViewer 交互查看器
     │   ├── LayoutBuilder.md     # LayoutBuilder 布局构建器
+    │   ├── LimitedBox.md        # LimitedBox 限制盒组件
     │   ├── MediaQuery.md        # MediaQuery 媒体查询组件
+    │   ├── Offstage.md          # Offstage 隐藏组件
     │   ├── Opacity.md           # Opacity 透明度组件
+    │   ├── OverflowBox.md       # OverflowBox 溢出盒组件
     │   ├── Padding.md           # Padding 内边距组件
+    │   ├── Placeholder.md       # Placeholder 占位组件
     │   ├── Positioned.md        # Positioned 定位组件
     │   ├── ReorderableListView.md # ReorderableListView 可排序列表
+    │   ├── ScrollConfiguration.md # ScrollConfiguration 滚动配置
     │   ├── SingleChildScrollView.md # SingleChildScrollView 单子滚动视图
+    │   ├── SizeChangedLayoutNotifier.md # SizeChangedLayoutNotifier 尺寸变化通知
+    │   ├── SizedOverflowBox.md  # SizedOverflowBox 定尺寸溢出盒
     │   ├── Spacer.md            # Spacer 间距组件
-    │   └── Transform.md         # Transform 变换组件
+    │   ├── Table.md             # Table 表格组件
+    │   ├── Transform.md         # Transform 变换组件
+    │   └── UnconstrainedBox.md  # UnconstrainedBox 无约束盒
     │
-    └── Material3/               # Material 3 组件
-        ├── AlertDialog.md       # AlertDialog 警告对话框
-        ├── AppBar.md            # AppBar 应用栏
-        ├── Badge.md             # Badge 徽章
-        ├── BottomNavigationBar.md # BottomNavigationBar 底部导航栏
-        ├── BottomSheet.md       # BottomSheet 底部弹出
-        ├── Button.md            # Button 按钮（5种类型）
-        ├── Card.md              # Card 卡片
-        ├── Checkbox.md          # Checkbox 复选框
-        ├── Chip.md              # Chip 标签
-        ├── CircleAvatar.md      # CircleAvatar 圆形头像
-        ├── Column.md            # Column 垂直布局
-        ├── Container.md         # Container 容器
-        ├── DataTable.md         # DataTable 数据表格
-        ├── DatePicker.md        # DatePicker 日期选择器
-        ├── Dialog.md            # Dialog 对话框
-        ├── Divider.md           # Divider 分割线
-        ├── Drawer.md            # Drawer 侧边抽屉
-        ├── DropdownButton.md    # DropdownButton 下拉菜单
-        ├── Expanded.md          # Expanded 填充空间
-        ├── Flexible.md          # Flexible 弹性布局
-        ├── GridView.md          # GridView 网格布局
-        ├── Icon.md              # Icon 图标
-        ├── Image.md             # Image 图片
-        ├── ListTile.md          # ListTile 列表项
-        ├── ListView.md          # ListView 滚动列表
-        ├── Menu.md              # Menu 现代菜单
-        ├── Navigation.md        # NavigationBar/NavigationRail/Drawer
-        ├── PopupMenu.md         # PopupMenu 弹出菜单
-        ├── Progress.md          # Progress 进度条
-        ├── Radio.md             # Radio 单选框
-        ├── RichText.md          # RichText 富文本
-        ├── Row.md               # Row 水平布局
-        ├── SafeArea.md          # SafeArea 安全区域
-        ├── Scaffold.md          # Scaffold 页面骨架
-        ├── SearchBar.md         # SearchBar 搜索栏
-        ├── SegmentedButton.md   # SegmentedButton 分段按钮
-        ├── SelectableText.md    # SelectableText 可选择文本
-        ├── SizedBox.md          # SizedBox 尺寸盒子
-        ├── Slider.md            # Slider 滑动选择器
-        ├── SnackBar.md          # SnackBar 消息提示
-        ├── Stack.md             # Stack 堆叠布局
-        ├── Switch.md            # Switch 开关
-        ├── TabBar.md            # TabBar 标签页
-        ├── Text.md              # Text 文本显示
-        ├── TextField.md         # TextField 文本输入
-        ├── TimePicker.md        # TimePicker 时间选择器
-        ├── Tooltip.md           # Tooltip 提示
-        └── Wrap.md              # Wrap 流式布局
+    ├── Material3/               # Material 3 组件
+    │   ├── AlertDialog.md       # AlertDialog 警告对话框
+    │   ├── AppBar.md            # AppBar 应用栏
+    │   ├── Badge.md             # Badge 徽章
+    │   ├── BottomAppBar.md      # BottomAppBar 底部应用栏
+    │   ├── BottomNavigationBar.md # BottomNavigationBar 底部导航栏
+    │   ├── BottomSheet.md       # BottomSheet 底部弹出
+    │   ├── Button.md            # Button 按钮（5种类型）
+    │   ├── Card.md              # Card 卡片
+    │   ├── Checkbox.md          # Checkbox 复选框
+    │   ├── Chip.md              # Chip 标签
+    │   ├── CircleAvatar.md      # CircleAvatar 圆形头像
+    │   ├── Column.md            # Column 垂直布局
+    │   ├── Container.md         # Container 容器
+    │   ├── DataTable.md         # DataTable 数据表格
+    │   ├── DatePicker.md        # DatePicker 日期选择器
+    │   ├── Dialog.md            # Dialog 对话框
+    │   ├── Divider.md           # Divider 分割线
+    │   ├── Drawer.md            # Drawer 侧边抽屉
+    │   ├── DropdownButton.md    # DropdownButton 下拉菜单
+    │   ├── Expanded.md          # Expanded 填充空间
+    │   ├── Flexible.md          # Flexible 弹性布局
+    │   ├── GridView.md          # GridView 网格布局
+    │   ├── Icon.md              # Icon 图标
+    │   ├── Image.md             # Image 图片
+    │   ├── ListTile.md          # ListTile 列表项
+    │   ├── ListView.md          # ListView 滚动列表
+    │   ├── Menu.md              # Menu 现代菜单
+    │   ├── Navigation.md        # NavigationBar/NavigationRail/Drawer
+    │   ├── PopupMenu.md         # PopupMenu 弹出菜单
+    │   ├── Progress.md          # Progress 进度条
+    │   ├── Radio.md             # Radio 单选框
+    │   ├── RichText.md          # RichText 富文本
+    │   ├── Row.md               # Row 水平布局
+    │   ├── SafeArea.md          # SafeArea 安全区域
+    │   ├── Scaffold.md          # Scaffold 页面骨架
+    │   ├── SearchBar.md         # SearchBar 搜索栏
+    │   ├── SegmentedButton.md   # SegmentedButton 分段按钮
+    │   ├── SelectableText.md    # SelectableText 可选择文本
+    │   ├── SizedBox.md          # SizedBox 尺寸盒子
+    │   ├── Slider.md            # Slider 滑动选择器
+    │   ├── SnackBar.md          # SnackBar 消息提示
+    │   ├── Stack.md             # Stack 堆叠布局
+    │   ├── Switch.md            # Switch 开关
+    │   ├── TabBar.md            # TabBar 标签页
+    │   ├── Text.md              # Text 文本显示
+    │   ├── TextField.md         # TextField 文本输入
+    │   ├── TimePicker.md        # TimePicker 时间选择器
+    │   ├── Tooltip.md           # Tooltip 提示
+    │   └── Wrap.md              # Wrap 流式布局
+    │
+    └── Sliver/                  # Sliver 组件
+        ├── SliverAppBar.md      # SliverAppBar 滚动应用栏
+        ├── SliverGrid.md        # SliverGrid 滚动网格
+        ├── SliverList.md        # SliverList 滚动列表
+        ├── SliverPersistentHeader.md # SliverPersistentHeader 持久化头部
+        └── SliverToBoxAdapter.md # SliverToBoxAdapter 盒子适配器
 ```
 
 ## 文档说明
+
+### Animation 动画组件
+
+widgets/Animation/ 目录包含 Flutter 动画相关组件。
+
+#### 隐式动画组件
+- **AnimatedContainer.md** - 容器属性动画，自动动画化 width、height、color 等
+- **AnimatedOpacity.md** - 透明度动画，实现淡入淡出效果
+- **AnimatedAlign.md** - 对齐位置动画，子组件位置过渡
+- **AnimatedPadding.md** - 内边距动画，间距变化过渡
+- **AnimatedPositioned.md** - 位置动画，在 Stack 中定位过渡
+
+#### 切换动画组件
+- **AnimatedCrossFade.md** - 两个组件间淡入淡出切换
+- **AnimatedSwitcher.md** - 多组件切换动画，基于 Key 识别
+
+#### 动画构建器
+- **AnimatedBuilder.md** - 通用动画构建器，配合 AnimationController 使用
+
+---
 
 ### Base 基础组件
 
@@ -161,6 +223,13 @@ widgets/Base/ 目录包含 Flutter 核心/基础组件，不依赖 Material Desi
 - **ConstrainedBox.md** - 约束盒组件，限制子组件尺寸
 - **FittedBox.md** - 缩放适应组件，根据父容器缩放子组件
 - **LayoutBuilder.md** - 布局构建器，根据父约束构建布局
+- **FractionallySizedBox.md** - 百分比尺寸组件，相对于父容器
+- **LimitedBox.md** - 限制盒组件，无约束时限制最大尺寸
+- **OverflowBox.md** - 溢出盒组件，允许子组件超出约束
+- **SizedOverflowBox.md** - 定尺寸溢出盒，固定自身尺寸
+- **UnconstrainedBox.md** - 无约束盒组件，移除父容器约束
+- **Baseline.md** - 基线对齐组件，文本基线对齐
+- **Flow.md** - 流式布局组件，高性能自定义布局
 
 #### 滚动与手势
 - **SingleChildScrollView.md** - 单子滚动视图
@@ -169,11 +238,13 @@ widgets/Base/ 目录包含 Flutter 核心/基础组件，不依赖 Material Desi
 - **GestureDetector.md** - 手势检测组件，识别点击、滑动等手势
 - **Dismissible.md** - 可滑动删除组件
 - **InteractiveViewer.md** - 交互查看器，支持缩放平移
+- **ScrollConfiguration.md** - 滚动配置组件，自定义滚动行为
 
 #### 裁剪与装饰
 - **ClipRect.md** - 矩形裁剪
 - **ClipRRect.md** - 圆角矩形裁剪
 - **ClipOval.md** - 椭圆裁剪
+- **ClipPath.md** - 自定义路径裁剪
 - **DecoratedBox.md** - 装饰盒组件，添加背景、边框等装饰
 - **Opacity.md** - 透明度组件，调整子组件透明度
 - **Transform.md** - 变换组件，矩阵变换
@@ -197,6 +268,12 @@ widgets/Base/ 目录包含 Flutter 核心/基础组件，不依赖 Material Desi
 
 #### 自定义绘制
 - **CustomPaint.md** - 自定义绘制组件，使用 Canvas 绘制
+
+#### 其他
+- **Offstage.md** - 隐藏组件，控制子组件显示/隐藏
+- **Placeholder.md** - 占位组件，开发阶段占位符
+- **Table.md** - 表格组件，创建表格布局
+- **SizeChangedLayoutNotifier.md** - 尺寸变化通知组件
 
 ---
 
@@ -223,6 +300,7 @@ widgets/Material3/ 目录包含 Material Design 3 风格组件。
 #### 页面结构
 - **Scaffold.md** - 页面骨架
 - **AppBar.md** - 应用栏
+- **BottomAppBar.md** - 底部应用栏，与 FAB 配合
 - **TabBar.md** - 标签页
 - **Navigation.md** - 导航组件（NavigationBar/NavigationRail/NavigationDrawer）
 - **BottomNavigationBar.md** - 底部导航栏
@@ -271,6 +349,33 @@ widgets/Material3/ 目录包含 Material Design 3 风格组件。
 - **Chip.md** - 标签
 - **PopupMenu.md** - 弹出菜单
 - **SearchBar.md** - 搜索栏
+
+---
+
+### Sliver 组件
+
+widgets/Sliver/ 目录包含 Flutter Sliver 相关组件，用于 CustomScrollView 中。
+
+#### 滚动容器
+- **SliverAppBar.md** - 滚动应用栏，支持折叠展开
+- **SliverList.md** - 滚动列表，按需构建
+- **SliverGrid.md** - 滚动网格，网格布局
+
+#### 适配器
+- **SliverToBoxAdapter.md** - 盒子适配器，包装普通组件为 Sliver
+
+#### 头部
+- **SliverPersistentHeader.md** - 持久化头部，可折叠固定
+
+## 文档统计
+
+| 分类 | 数量 |
+|------|------|
+| Animation 动画组件 | 8 |
+| Base 基础组件 | 41 |
+| Material3 组件 | 49 |
+| Sliver 组件 | 5 |
+| **总计** | **103** |
 
 ## 文档规范
 

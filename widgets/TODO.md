@@ -42,48 +42,48 @@
 
 | Widget | Description | Status |
 |--------|-------------|--------|
-| BottomAppBar.md | Bottom app bar | TODO |
+| BottomAppBar.md | Bottom app bar | ✅ DONE |
 
 ## Low Priority - Base Widgets
 
 | Widget | Description | Status |
 |--------|-------------|--------|
-| Baseline.md | Baseline widget | TODO |
-| ClipPath.md | Path clip | TODO |
-| Flow.md | Flow layout | TODO |
-| FractionallySizedBox.md | Fractionally sized box | TODO |
-| LimitedBox.md | Limited box | TODO |
-| Offstage.md | Offstage widget | TODO |
-| OverflowBox.md | Overflow box | TODO |
-| Placeholder.md | Placeholder widget | TODO |
-| ScrollConfiguration.md | Scroll configuration | TODO |
-| SizeChangedLayoutNotifier.md | Size changed notifier | TODO |
-| SizedOverflowBox.md | Sized overflow box | TODO |
-| Table.md | Table widget | TODO |
-| UnconstrainedBox.md | Unconstrained box | TODO |
+| Baseline.md | Baseline widget | ✅ DONE |
+| ClipPath.md | Path clip | ✅ DONE |
+| Flow.md | Flow layout | ✅ DONE |
+| FractionallySizedBox.md | Fractionally sized box | ✅ DONE |
+| LimitedBox.md | Limited box | ✅ DONE |
+| Offstage.md | Offstage widget | ✅ DONE |
+| OverflowBox.md | Overflow box | ✅ DONE |
+| Placeholder.md | Placeholder widget | ✅ DONE |
+| ScrollConfiguration.md | Scroll configuration | ✅ DONE |
+| SizeChangedLayoutNotifier.md | Size changed notifier | ✅ DONE |
+| SizedOverflowBox.md | Sized overflow box | ✅ DONE |
+| Table.md | Table widget | ✅ DONE |
+| UnconstrainedBox.md | Unconstrained box | ✅ DONE |
 
-## Animation Widgets (Future)
-
-| Widget | Description | Status |
-|--------|-------------|--------|
-| AnimatedContainer.md | Animated container | TODO |
-| AnimatedOpacity.md | Animated opacity | TODO |
-| AnimatedAlign.md | Animated align | TODO |
-| AnimatedPadding.md | Animated padding | TODO |
-| AnimatedPositioned.md | Animated positioned | TODO |
-| AnimatedCrossFade.md | Animated cross fade | TODO |
-| AnimatedSwitcher.md | Animated switcher | TODO |
-| AnimatedBuilder.md | Animated builder | TODO |
-
-## Sliver Widgets (Future)
+## Animation Widgets
 
 | Widget | Description | Status |
 |--------|-------------|--------|
-| SliverAppBar.md | Sliver app bar | TODO |
-| SliverList.md | Sliver list | TODO |
-| SliverGrid.md | Sliver grid | TODO |
-| SliverToBoxAdapter.md | Sliver to box adapter | TODO |
-| SliverPersistentHeader.md | Sliver persistent header | TODO |
+| AnimatedContainer.md | Animated container | ✅ DONE |
+| AnimatedOpacity.md | Animated opacity | ✅ DONE |
+| AnimatedAlign.md | Animated align | ✅ DONE |
+| AnimatedPadding.md | Animated padding | ✅ DONE |
+| AnimatedPositioned.md | Animated positioned | ✅ DONE |
+| AnimatedCrossFade.md | Animated cross fade | ✅ DONE |
+| AnimatedSwitcher.md | Animated switcher | ✅ DONE |
+| AnimatedBuilder.md | Animated builder | ✅ DONE |
+
+## Sliver Widgets
+
+| Widget | Description | Status |
+|--------|-------------|--------|
+| SliverAppBar.md | Sliver app bar | ✅ DONE |
+| SliverList.md | Sliver list | ✅ DONE |
+| SliverGrid.md | Sliver grid | ✅ DONE |
+| SliverToBoxAdapter.md | Sliver to box adapter | ✅ DONE |
+| SliverPersistentHeader.md | Sliver persistent header | ✅ DONE |
 
 ## Deprecated/Legacy Widgets
 
@@ -103,13 +103,19 @@
 | AndroidAppBar | AppBar | Deprecated |
 | CupertinoActionSheet | Use showModalBottomSheet | Consider alternatives |
 
-## Completed Widgets (76)
+## Completed Widgets (102)
 
-### Material 3 Components (48)
-AlertDialog, AppBar, Badge, BottomNavigationBar, BottomSheet, Button, Card, Checkbox, Chip, CircleAvatar, Column, Container, DataTable, DatePicker, Dialog, Divider, Drawer, DropdownButton, Expanded, Flexible, GridView, Icon, Image, ListTile, ListView, Menu, Navigation, PopupMenu, Progress, Radio, RichText, Row, SafeArea, Scaffold, SearchBar, SegmentedButton, SelectableText, SizedBox, Slider, SnackBar, Stack, Switch, TabBar, Text, TextField, TimePicker, Tooltip, Wrap
+### Material 3 Components (49)
+AlertDialog, AppBar, Badge, BottomAppBar, BottomNavigationBar, BottomSheet, Button, Card, Checkbox, Chip, CircleAvatar, Column, Container, DataTable, DatePicker, Dialog, Divider, Drawer, DropdownButton, Expanded, Flexible, GridView, Icon, Image, ListTile, ListView, Menu, Navigation, PopupMenu, Progress, Radio, RichText, Row, SafeArea, Scaffold, SearchBar, SegmentedButton, SelectableText, SizedBox, Slider, SnackBar, Stack, Switch, TabBar, Text, TextField, TimePicker, Tooltip, Wrap
 
-### Base Widgets (28)
-Align, Center, Padding, Spacer, Positioned, Form, FormField, GestureDetector, MediaQuery, LayoutBuilder, SingleChildScrollView, AspectRatio, ClipOval, ClipRect, ClipRRect, ConstrainedBox, CustomPaint, CustomScrollView, DecoratedBox, Dismissible, Draggable, DragTarget, FittedBox, Hero, InteractiveViewer, Opacity, ReorderableListView, Transform
+### Base Widgets (41)
+Align, AspectRatio, Baseline, Center, ClipOval, ClipPath, ClipRect, ClipRRect, ConstrainedBox, CustomPaint, CustomScrollView, DecoratedBox, Dismissible, Draggable, DragTarget, FittedBox, Flow, Form, FormField, FractionallySizedBox, GestureDetector, Hero, InteractiveViewer, LayoutBuilder, LimitedBox, MediaQuery, Offstage, Opacity, OverflowBox, Padding, Placeholder, Positioned, ReorderableListView, ScrollConfiguration, SingleChildScrollView, SizeChangedLayoutNotifier, SizedOverflowBox, Spacer, Table, Transform, UnconstrainedBox
+
+### Animation Widgets (8)
+AnimatedAlign, AnimatedBuilder, AnimatedContainer, AnimatedCrossFade, AnimatedOpacity, AnimatedPadding, AnimatedPositioned, AnimatedSwitcher
+
+### Sliver Widgets (5)
+SliverAppBar, SliverGrid, SliverList, SliverPersistentHeader, SliverToBoxAdapter
 
 ---
 
