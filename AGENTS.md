@@ -76,23 +76,34 @@ dart/
 │   │   ├── Dart_Async.md        # Dart 异步编程
 │   │   ├── Dart_Basics.md       # Dart 基础语法
 │   │   ├── Dart_OOP.md          # Dart 面向对象
+│   │   ├── Debugging.md         # 调试技巧
+│   │   ├── Errors.md            # 错误处理
 │   │   ├── Navigator.md         # 导航路由
+│   │   ├── ProjectStructure.md  # 项目结构最佳实践
 │   │   ├── Provider.md          # Provider 状态管理
 │   │   └── StateManagement.md   # 状态管理概述
 │   ├── medium/                  # 中优先级（进阶特性）
 │   │   ├── Dart_Generics.md     # Dart 泛型
+│   │   ├── FlutterWeb.md        # Flutter Web 开发
 │   │   ├── GoRouter.md          # GoRouter 路由
+│   │   ├── Isolate.md           # Isolate 并发编程
 │   │   ├── Networking.md        # 网络请求
+│   │   ├── PlatformChannels.md  # 平台通道
+│   │   ├── ResponsiveDesign.md  # 响应式设计与多端适配
 │   │   ├── Riverpod.md          # Riverpod 状态管理
 │   │   ├── Storage.md           # 数据存储
 │   │   └── Theming.md           # 主题定制
 │   └── low/                     # 低优先级（高级特性）
+│       ├── Accessibility.md     # 无障碍支持
 │       ├── Animation.md         # 动画系统
 │       ├── Bloc.md              # Bloc 状态管理
+│       ├── FlutterDesktop.md    # 桌面端开发
 │       ├── Gesture.md           # 手势处理
 │       ├── I18n.md              # 国际化
 │       ├── Lifecycle.md         # 生命周期
 │       ├── Performance.md       # 性能优化
+│       ├── PluginDevelopment.md # 插件开发
+│       ├── RenderObject.md      # RenderObject 深入
 │       └── Testing.md           # 测试
 │
 └── widgets/                     # Flutter 组件学习
@@ -400,6 +411,9 @@ syntax/ 目录包含 Dart 语言和 Flutter 核心概念学习文档，按优先
 - **StateManagement.md** - 状态管理概述，核心概念与方案对比
 - **Provider.md** - Provider 状态管理，官方推荐的基础方案
 - **Navigator.md** - 导航路由，页面跳转与参数传递
+- **Errors.md** - 错误处理与异常捕获，try-catch、Result 模式
+- **Debugging.md** - 调试技巧，DevTools、断点、日志
+- **ProjectStructure.md** - 项目结构最佳实践，目录组织规范
 
 #### 中优先级（进阶特性）
 - **Dart_Generics.md** - Dart 泛型，类型参数与约束
@@ -408,6 +422,10 @@ syntax/ 目录包含 Dart 语言和 Flutter 核心概念学习文档，按优先
 - **Theming.md** - 主题定制，深色模式与自定义主题
 - **GoRouter.md** - GoRouter 声明式路由
 - **Riverpod.md** - Riverpod 状态管理，响应式编程
+- **Isolate.md** - Isolate 并发编程，compute 函数
+- **PlatformChannels.md** - 平台通道，原生代码交互
+- **ResponsiveDesign.md** - 响应式设计，多端适配策略
+- **FlutterWeb.md** - Flutter Web 开发注意事项
 
 #### 低优先级（高级特性）
 - **Animation.md** - 动画系统，AnimationController、Tween 等
@@ -417,19 +435,23 @@ syntax/ 目录包含 Dart 语言和 Flutter 核心概念学习文档，按优先
 - **I18n.md** - 国际化，多语言支持
 - **Testing.md** - 测试，单元测试与 Widget 测试
 - **Bloc.md** - Bloc 状态管理，事件驱动架构
+- **RenderObject.md** - RenderObject 深入，自定义渲染
+- **PluginDevelopment.md** - 插件开发，平台特定实现
+- **Accessibility.md** - 无障碍支持，语义化适配
+- **FlutterDesktop.md** - 桌面端开发，窗口与快捷键
 
 ## 文档统计
 
 | 分类 | 数量 |
 |------|------|
-| Syntax 高优先级 | 6 |
-| Syntax 中优先级 | 6 |
-| Syntax 低优先级 | 7 |
+| Syntax 高优先级 | 9 |
+| Syntax 中优先级 | 10 |
+| Syntax 低优先级 | 11 |
 | Animation 动画组件 | 8 |
 | Base 基础组件 | 41 |
 | Material3 组件 | 49 |
 | Sliver 组件 | 5 |
-| **总计** | **122** |
+| **总计** | **133** |
 
 ## 文档规范
 
