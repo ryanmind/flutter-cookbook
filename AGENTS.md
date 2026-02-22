@@ -123,6 +123,9 @@ dart/
 ├── packages/                   # 第三方库
 │   └── ThirdPartyLibraries.md  # 常用第三方库指南
 │
+├── deep-learning/              # 深度学习笔记
+│   └── UIKit_vs_Flutter.md     # UIKit 与 Flutter 对比学习
+│
 └── widgets/                    # Flutter 组件学习
     ├── TODO.md
     │
@@ -499,6 +502,19 @@ packages/ 目录包含常用第三方库使用指南。
 
 - **ThirdPartyLibraries.md** - 网络、状态管理、存储、图片等常用库介绍
 
+---
+
+### Deep-Learning 深度学习笔记
+
+deep-learning/ 目录包含 Flutter 组件与 UIKit/Objective-C 的对比学习笔记。
+
+- **SizedBox_vs_UIKit.md** - SizedBox 与 UIKit 对比学习
+- **Container_vs_UIKit.md** - Container 与 UIView 对比学习，包含：
+  - Container 源码分析与 Widget 组合
+  - Container 与 UIView 属性映射
+  - 装饰、阴影、渐变等对比实现
+  - 性能考量与常见陷阱
+
 ## 文档统计
 
 | 分类 | 数量 |
@@ -515,7 +531,8 @@ packages/ 目录包含常用第三方库使用指南。
 | Patterns 设计模式 | 1 |
 | Security 安全 | 1 |
 | Packages 第三方库 | 1 |
-| **总计** | **139** |
+| Deep-Learning 深度学习 | 2 |
+| **总计** | **141** |
 
 ## 文档规范
 
@@ -683,4 +700,4 @@ ListView.builder(
 
 ---
 
-*最后更新: 2026-02-19*
+*最后更新: 2026-02-20*
