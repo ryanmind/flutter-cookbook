@@ -1,6 +1,6 @@
 # Flutter Cookbook 🍳
 
-Flutter 学习文档集合，涵盖组件、语法、进阶教程等内容。
+Flutter 学习文档集合，涵盖组件、语法、进阶教程等内容。专为有 iOS/Objective-C 开发背景的开发者提供对比学习资料。
 
 ## 📚 目录结构
 
@@ -16,6 +16,10 @@ flutter-cookbook/
 │   ├── Base/            # 基础组件
 │   ├── Material3/       # Material 3 组件
 │   └── Sliver/          # Sliver 组件
+│
+├── syntax-vs-ObjC/      # Dart 语法 vs Objective-C 对比
+│
+├── widgets-vs-UIKit/    # Flutter 组件 vs UIKit 对比
 │
 ├── advanced/            # 进阶教程
 │   └── projects/        # 实战项目
@@ -45,6 +49,29 @@ flutter-cookbook/
 | Material3 组件 | 49 |
 | Sliver 组件 | 5 |
 
+### Syntax vs ObjC 对比文档
+
+iOS 开发者专属学习资料，对比 Dart 与 Objective-C 的差异：
+
+| 文档 | 说明 |
+|------|------|
+| setState_vs_iOS.md | 命令式更新 vs 声明式重建 |
+| Provider_vs_iOS.md | 单例/通知中心 vs InheritedWidget |
+| Riverpod_vs_iOS.md | 编译时安全的状态管理 |
+| BLoC_vs_iOS.md | MVVM vs 事件驱动架构 |
+
+### Widgets vs UIKit 对比文档
+
+40+ 篇对比文档，帮助 iOS 开发者快速理解 Flutter 组件：
+
+| 分类 | 示例文档 |
+|------|----------|
+| 布局系统 | Row_vs_AutoLayout、Column_vs_AutoLayout、Stack_vs_AutoLayout |
+| 基础组件 | Text_vs_UILabel、Button_vs_UIButton、TextField_vs_UITextField |
+| 导航系统 | Navigation_vs_UINavigationController、TabBar_vs_UITabBarController |
+| 列表滚动 | ListView_vs_UITableView、GridView_vs_UICollectionView |
+| 动画系统 | AnimatedContainer_vs_UIViewAnimation、Hero_vs_CustomTransition |
+
 ### 进阶教程
 
 - **电商应用实战** - 完整项目流程：认证、商品、购物车
@@ -67,6 +94,13 @@ flutter-cookbook/
 4. **页面结构** → `widgets/Material3/Scaffold.md` → `AppBar.md`
 5. **状态管理入门** → `syntax/high/StateManagement.md` → `Provider.md`
 
+### iOS 开发者（推荐）
+
+1. **思维转换** → `widgets-vs-UIKit/GLM5_GUIDE.md`
+2. **布局对比** → `widgets-vs-UIKit/Row_vs_AutoLayout.md`
+3. **组件对比** → `widgets-vs-UIKit/Text_vs_UILabel.md`
+4. **状态管理** → `syntax-vs-ObjC/setState_vs_iOS.md` → `Provider_vs_iOS.md`
+
 ### 进阶开发者
 
 1. **异步编程** → `syntax/high/Dart_Async.md`
@@ -88,20 +122,23 @@ flutter-cookbook/
 |------|------|
 | Syntax 语法 | 30 |
 | Widgets 组件 | 103 |
+| Syntax vs ObjC | 4 |
+| Widgets vs UIKit | 37 |
 | Advanced 进阶 | 2 |
 | CI/CD | 1 |
 | Patterns | 1 |
 | Security | 1 |
 | Packages | 1 |
-| **总计** | **139** |
+| **总计** | **180** |
 
 ## 🔗 快速链接
 
 - [AGENTS.md](./AGENTS.md) - 完整文档索引
 - [Material 3 组件指南](./Flutter_Material3_组件指南.md)
+- [iOS 开发者学习方案](./widgets-vs-UIKit/GLM5_GUIDE.md)
 - [常用第三方库](./packages/ThirdPartyLibraries.md)
 - [应用安全最佳实践](./security/AppSecurity.md)
 
 ---
 
-*最后更新: 2026-02-19*
+*最后更新: 2026-02-24*
