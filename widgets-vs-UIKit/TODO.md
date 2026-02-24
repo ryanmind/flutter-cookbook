@@ -48,12 +48,13 @@
 | `Animation_vs_CABasicAnimation.md` | ✅ 完成 | 核心动画对比 |
 | `Card_vs_UICollectionViewCell.md` | ✅ 完成 | 卡片对比 |
 | `AutoLayout_vs_Masonry.md` | ✅ 完成 | 链式语法对比 |
+| `GLM5_GUIDE.md` | ✅ 完成 | iOS 开发者 Flutter 学习方案 |
 
 ---
 
 ## 全部完成 🎉
 
-所有计划文档已完成，共计 **36 个**对比学习文档。
+所有计划文档已完成，共计 **37 个**对比学习文档。
 
 ---
 
