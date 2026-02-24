@@ -53,28 +53,28 @@ IconButton        → 图标按钮
 ```dart
 class ButtonStyle {
   // 文字样式
-  final MaterialStateProperty<TextStyle?>? textStyle;
+  final WidgetStateProperty<TextStyle?>? textStyle;
   
   // 背景色
-  final MaterialStateProperty<Color?>? backgroundColor;
+  final WidgetStateProperty<Color?>? backgroundColor;
   
   // 前景色（文字/图标）
-  final MaterialStateProperty<Color?>? foregroundColor;
+  final WidgetStateProperty<Color?>? foregroundColor;
   
   // 边框
-  final MaterialStateProperty<BorderSide?>? side;
+  final WidgetStateProperty<BorderSide?>? side;
   
   // 阴影
-  final MaterialStateProperty<double?>? elevation;
+  final WidgetStateProperty<double?>? elevation;
   
   // 内边距
-  final MaterialStateProperty<EdgeInsetsGeometry?>? padding;
+  final WidgetStateProperty<EdgeInsetsGeometry?>? padding;
   
   // 最小尺寸
-  final MaterialStateProperty<Size?>? minimumSize;
+  final WidgetStateProperty<Size?>? minimumSize;
   
   // 形状
-  final MaterialStateProperty<OutlinedBorder?>? shape;
+  final WidgetStateProperty<OutlinedBorder?>? shape;
   
   // ... 更多属性
 }
@@ -453,7 +453,7 @@ FilledButton(
   style: ButtonStyle(
     backgroundColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.pressed)) {
-        return Colors.blue.withOpacity(0.8);
+        return Colors.blue.withValues(alpha: 0.8);
       }
       return Colors.blue;
     }),
@@ -591,7 +591,7 @@ class _LoadingButtonState extends State<LoadingButton> {
 }
 ```
 
-### 技巧3：使用 MaterialState
+### 技巧3：使用 WidgetState
 
 ```dart
 // Material 3 使用 WidgetState（Flutter 3.22+）

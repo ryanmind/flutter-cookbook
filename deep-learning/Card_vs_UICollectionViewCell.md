@@ -165,7 +165,7 @@ cell.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:cell.bounds corn
 // Flutter
 Card(
   elevation: 8,  // 阴影高度
-  shadowColor: Colors.black.withOpacity(0.15),
+  shadowColor: Colors.black.withValues(alpha: 0.15),
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(12),
   ),

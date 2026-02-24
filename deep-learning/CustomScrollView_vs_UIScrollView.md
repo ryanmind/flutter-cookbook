@@ -414,7 +414,7 @@ SliverList(
     (context, index) => ListTile(title: Text('Item $index')),
     childCount: 100,
     // 可选：添加语义信息
-    findChildIndexCallback: (key) {
+    findItemIndexCallback: (key) {
       // 根据 Key 查找索引
       return null;
     },

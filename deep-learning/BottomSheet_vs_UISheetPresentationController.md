@@ -411,7 +411,7 @@ class ShareSheet extends StatelessWidget {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(
-                      color: Colors.blue.withOpacity(0.1),
+                      color: Colors.blue.withValues(alpha: 0.1),
                       shape: BoxShape.circle,
                     ),
                     child: Icon(item['icon'] as IconData, color: Colors.blue),

@@ -129,7 +129,7 @@ Switch(
   value: _isOn,
   onChanged: (value) {},
   activeColor: Colors.blue,              // 开启滑块颜色
-  activeTrackColor: Colors.blue.withOpacity(0.5),  // 开启轨道颜色
+  activeTrackColor: Colors.blue.withValues(alpha: 0.5),  // 开启轨道颜色
   inactiveThumbColor: Colors.white,      // 关闭滑块颜色
   inactiveTrackColor: Colors.grey,       // 关闭轨道颜色
 )
@@ -146,7 +146,7 @@ Switch(
   }),
   trackColor: WidgetStateProperty.resolveWith((states) {
     if (states.contains(WidgetState.selected)) {
-      return Colors.blue.withOpacity(0.5);
+      return Colors.blue.withValues(alpha: 0.5);
     }
     return Colors.grey;
   }),
@@ -341,7 +341,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 setState(() => notificationsEnabled = value);
               },
               activeColor: Colors.purple,
-              activeTrackColor: Colors.purple.withOpacity(0.5),
+              activeTrackColor: Colors.purple.withValues(alpha: 0.5),
             ),
           ),
         ],

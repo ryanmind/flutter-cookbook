@@ -151,7 +151,7 @@ indicator.translatesAutoresizingMaskIntoConstraints = NO;
 ```dart
 // 创建同样的加载指示器 - 极其简洁
 Container(
-  color: Colors.black.withOpacity(0.3),
+  color: Colors.black.withValues(alpha: 0.3),
   child: Center(
     child: CircularProgressIndicator(),
   ),
@@ -163,7 +163,7 @@ Stack(
     ContentWidget(),
     if (isLoading)
       Container(
-        color: Colors.black.withOpacity(0.3),
+        color: Colors.black.withValues(alpha: 0.3),
         child: const Center(
           child: CircularProgressIndicator(),
         ),

@@ -213,7 +213,7 @@ AnimatedContainer(
       width: 2,
     ),
     boxShadow: isSelected
-      ? [BoxShadow(color: Colors.blue.withOpacity(0.3), blurRadius: 8)]
+      ? [BoxShadow(color: Colors.blue.withValues(alpha: 0.3), blurRadius: 8)]
       : [],
   ),
   child: Text('Decoration'),

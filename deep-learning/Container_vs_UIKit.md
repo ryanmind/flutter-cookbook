@@ -145,7 +145,7 @@ view.alpha = 0.5;  // 透明度
 ```dart
 // Flutter
 Container(
-  color: Colors.blue.withOpacity(0.5),
+  color: Colors.blue.withValues(alpha: 0.5),
   // 或使用 Color 构造函数
   color: Color(0x800000FF),  // ARGB
 )
@@ -215,7 +215,7 @@ Container(
     borderRadius: BorderRadius.circular(8),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.3),
+        color: Colors.black.withValues(alpha: 0.3),
         offset: Offset(0, 2),
         blurRadius: 4,
         spreadRadius: 0,  // 扩展半径
@@ -396,7 +396,7 @@ Container(
     border: Border.all(color: Colors.grey.shade300),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.1),
+        color: Colors.black.withValues(alpha: 0.1),
         offset: Offset(0, 4),
         blurRadius: 8,
       ),

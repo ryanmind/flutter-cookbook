@@ -667,7 +667,7 @@ GestureDetector(
 // 带水波纹效果的点击
 InkResponse(
   onTap: () => print('Tap'),
-  splashColor: Colors.blue.withOpacity(0.3),
+  splashColor: Colors.blue.withValues(alpha: 0.3),
   child: Container(
     padding: EdgeInsets.all(16),
     child: Text('Tap me'),

@@ -46,7 +46,7 @@ class Text extends StatelessWidget {
     this.locale,
     this.softWrap,                 // 自动换行
     this.overflow,                 // 溢出处理
-    this.textScaleFactor,          // 缩放因子
+    this.textScaler,                  // 文本缩放器 (Flutter 3.16+, 替代 textScaleFactor)
     this.maxLines,                 // 最大行数
     this.semanticsLabel,
     this.textWidthBasis,
@@ -316,7 +316,7 @@ Text(
   style: TextStyle(
     shadows: [
       Shadow(
-        color: Colors.black.withOpacity(0.5),
+        color: Colors.black.withValues(alpha: 0.5),
         offset: Offset(1, 1),
         blurRadius: 2,
       ),

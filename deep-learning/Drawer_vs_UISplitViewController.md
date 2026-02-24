@@ -498,7 +498,7 @@ ListTile(
   leading: Icon(Icons.home),
   title: Text('Home'),
   selected: _selectedIndex == 0,
-  selectedTileColor: Colors.blue.withOpacity(0.1),
+  selectedTileColor: Colors.blue.withValues(alpha: 0.1),
   selectedColor: Colors.blue,
   onTap: () {},
 )
