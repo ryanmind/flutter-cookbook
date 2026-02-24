@@ -92,17 +92,23 @@
 
 **目标**：理解 Flutter 状态管理
 
-| 主题 | 说明 |
-|------|------|
-| setState | 最基础的状态管理 |
-| Provider | 官方推荐的状态管理 |
-| Riverpod | Provider 的进化版 |
-| Bloc | 事件驱动的状态管理 |
+| 顺序 | 主题 | 对比 iOS | 文档位置 |
+|------|------|----------|----------|
+| 1 | setState | 命令式更新 vs 声明式重建 | [setState_vs_iOS.md](../syntax-vs-ObjC/setState_vs_iOS.md) |
+| 2 | Provider | 单例/通知中心 vs InheritedWidget | [Provider_vs_iOS.md](../syntax-vs-ObjC/Provider_vs_iOS.md) |
+| 3 | Riverpod | Provider 的进化版，编译时安全 | [Riverpod_vs_iOS.md](../syntax-vs-ObjC/Riverpod_vs_iOS.md) |
+| 4 | BLoC | MVVM vs 事件驱动架构 | [BLoC_vs_iOS.md](../syntax-vs-ObjC/BLoC_vs_iOS.md) |
 
 **学习路径**：
 1. 先会用 `setState` (Widget 内部状态)
 2. 再学 `Provider` (跨组件状态共享)
 3. 进阶 `Riverpod` 或 `Bloc`
+
+**关键概念**：
+- `setState` = 触发 Widget 重建
+- `ChangeNotifier` = KVO/通知中心 的 Flutter 版
+- `context.watch/read` = 订阅/读取数据
+- 单向数据流 vs iOS 双向绑定
 
 ---
 
@@ -170,6 +176,18 @@
 | setState | - | 触发重建 |
 | Navigator | UINavigationController | 导航 |
 | Controller | Delegate/DataSource | 控制器模式 |
+
+### 状态管理
+
+| Flutter | iOS | 说明 |
+|---------|-----|------|
+| `setState` | 手动更新 UI | Widget 内部状态 |
+| `ChangeNotifier` | NSNotificationCenter | 数据变化通知 |
+| `Provider` | 单例 + 代理 | 跨组件状态共享 |
+| `Riverpod` | 现代 Provider | 编译时安全 |
+| `BLoC/Cubit` | MVVM ViewModel | 事件驱动架构 |
+| `context.watch` | addObserver | 订阅数据 |
+| `context.read` | 直接访问 | 读取数据 |
 
 ---
 
